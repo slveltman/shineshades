@@ -5,9 +5,17 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>homepage shineshades</title>
+    <title>ShineShades home page</title>
 </head>
 <body>
-<h1>welcome to Shine Shades</h1>
+    <h2>index sunglasses</h2>
+    <p>{{$sunglass->name}}</p>
+
+<ul>
+    @foreach($sunglasses as $sunglass)
+        <li>{{$sunglass->name}}</li>
+    @endforeach
+</ul>
 </body>
 </html>
+
